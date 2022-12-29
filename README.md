@@ -88,6 +88,7 @@ _The instructions below will help you setup the project._
 
 1. Get a free API Key from : [Weather by API-Ninjas](https://rapidapi.com/apininjas/api/weather-by-api-ninjas/)
 4. Enter your API in `script.js`
+
    ```js
    'X-RapidAPI-Key': '{YOUR_API_KEY}',
    ```
