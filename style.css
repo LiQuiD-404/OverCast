@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: #dddfe0;
+}
+
+body{
+    padding: none;
+    margin: none;
+    overflow-x: hidden;   
+}
+
+
+.text {
+    color: #838383;
+}
+
+.subintro{
+    color: #838383;
+    margin-right: 5rem;
+}
+
+#city{
+    color: #0d6efd;
+}
+
+.maindiv{
+    height: 100vh;
+    width: 100vw;
+    background-color: #28282B;
+}
+
+@media (max-width: 1000px) {
+    .maindiv{
+        height: auto;
+        width: auto;
+        
+}
+}

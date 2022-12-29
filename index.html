@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OverCast - Weather APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">OverCast <img src="assets/logo.png" alt="logo" height="25px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/shubbh/" target="_blank">Meet the Developer</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Learn More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://www.linkedin.com/in/shubbh/" target="_blank">View Source Code</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="https://github.com/LiQuiD-404?tab=repositories" target="_blank">View other projects</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" id="form-city">
+                        <input class="form-control me-2" type="search" placeholder="Search for a city" aria-label="Search" id="input-city">
+                        <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="maindiv">
+            <div class="container px-4 py-5">
+                <h2 class="pb-2 border-bottom">Look up the weather of your favourite destination </h2>
+            
+                <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+                  <div class="col d-flex flex-column align-items-start gap-2">
+                    <h3 class="fw-bold">Current weather of <span id="city">Delhi</span></h3>
+                    <p class="subintro ">OverCast uses a weather API to fetch realtime weather details for the requested city. Slight deviations from actual data can sometimes occur.</p>
+                  </div>
+            
+                  <div class="col">
+                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+                      <div class="col d-flex flex-column gap-2">
+                        <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                          <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#collection"></use>
+                          </svg>
+                        </div>
+                        <h4 class="fw-semibold mb-0">Temperature <img src="assets/temp.png" alt="temp" height="25px"></h4>
+                        <p class="text">Temperature : <span id="temp"></span> <br>
+                          Maximum Temperature : <span id="temp-max"></span>
+                          Minimum Temperature : <span id="temp-min"></span>
+                        </p>
+                      </div>
+            
+                      <div class="col d-flex flex-column gap-2">
+                        <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                          <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#gear-fill"></use>
+                          </svg>
+                        </div>
+                        <h4 class="fw-semibold mb-0">Cloud <img src="assets/cloud.png" alt="temp" height="25px"></h4>
+                        <p class="text">Feels like : <span id="feels"></span> <br>
+                          Cloud Percentage : <span id="cloud"></span> <br>
+                          Humidity : <span id="humidity"></span>
+                        </p>
+                      </div>
+            
+                      <div class="col d-flex flex-column gap-2">
+                        <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                          <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#speedometer"></use>
+                          </svg>
+                        </div>
+                        <h4 class="fw-semibold mb-0">Wind <img src="assets/wind.png" alt="temp" height="25px"></h4>
+                        <p class="text">Wind Speed : <span id="speed"></span> <br>
+                          Wind Direction : <span id="direction"></span> <br>
+            
+                        </p>
+                      </div>
+            
+                      <div class="col d-flex flex-column gap-2">
+                        <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                          <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#table"></use>
+                          </svg>
+                        </div>
+                        <h4 class="fw-semibold mb-0">Sunrise & Sunset <img src="assets/sun.png" alt="temp" height="25px"></h4>
+                        <p class="text">Sunrise Time : <span id="rise"></span> <br>
+                          Sunset Time : <span id="set"></span> <br>
+
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
