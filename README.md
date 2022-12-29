@@ -8,7 +8,7 @@
   <p align="center">
     Look up the weather of your favourite destination with OverCast
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Visit Site »</strong></a>
+    <a href="https://liquid-404.github.io/OverCast-Weather-App/"><strong>Visit Site »</strong></a>
 </div>
 
 
