@@ -1,6 +1,6 @@
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/LiQuiD-404/OverCast/main/images/banner.jpg" alt="Logo" height="300">
+    <img src="https://raw.githubusercontent.com/LiQuiD-404/OverCast/main/images/banner.png" alt="Logo">
   </a>
 
   <h3 align="center">OverCast - Weather App </h3>
