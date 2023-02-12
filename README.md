@@ -41,8 +41,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-OverCast is a weather application that can accurately offer local weather details for a particular place.
-OverCast employs a weather API to fetch weather data. It can retrieve and show weather information such as temperature, cloud cover, and sunrise and sunset times.
+"OverCast" is an innovative weather app that provides real-time weather information for any location around the world. With a simple, user-friendly interface and accurate weather forecasts, it's never been easier to stay informed about the weather. The app is built using HTML, CSS, and JavaScript, making it fast and responsive. With OverCast, you can search for weather information by location and receive up-to-date data on temperature, humidity, wind speed, and more. Whether you're a professional meteorologist or just looking to check the weather before heading out, OverCast is the perfect weather app for you!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
